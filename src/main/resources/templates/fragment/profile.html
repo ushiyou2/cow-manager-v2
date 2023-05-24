@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+	
+  <div th:fragment="profile">
+    <div class="container align-self-start">
+      <div class="row justify-content-center">
+        <!-- show profile picture and name -->
+        <div class="d-flex justify-content-center my-4 col-8">
+          <svg class="bd-placeholder-img rounded-circle" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+          <div class="mx-3 profile_main">
+            <h4 th:text="${username}"></h4>
+            <p>自己紹介</p>
+            <a href="#">プロフィール編集</a>
+            <p>フォロー・フォロワー</p>
+          </div>
+        </div>
+      </div>
+      <div class="other_pages">
+        <!-- shows cows.html diary.html by layout -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-8 profile_btns">
+              <a href="#" class="btn btn-secondary btn-sm shadow-none profile_btn_fix">牛管理</a>
+              <a href="#" class="btn btn-secondary btn-sm shadow-none profile_btn_fix">日記</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin:0 7% 30px 7%;">
+    </div>
+  </div>
+  
+</body>
+</html>

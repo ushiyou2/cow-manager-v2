@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" xmlns:java="http://www.thymeleaf.org/java8time">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BootStrap Link -->
+  <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+  <link th:href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css}" rel="stylesheet">
+
+  <link rel="stylesheet" th:href="@{/css/app.css}"/>
+  <title>MOOMOO - 牛管理</title>
+</head>
+<body>
+  <div class="d-flex flex-row flex-nowrap fix_flex">
+    <nav class="d-flex flex-column p-3 bg-light" id="sidebar">
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="navbar-brand" style="font-size: 30px;">MOMORY</span>
+      </a>
+      <div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link" aria-current="page">
+              ホーム
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-dark">
+              牛管理
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-dark">
+              メッセージ
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-dark">
+              プロフィール
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-dark">
+              検索
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-dark">
+              AI質問 powered by GPT
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            <strong>アカウント</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser">
+            <li><a class="dropdown-item" href="#">設定</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">ログアウト</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="topbar">
+      <a class="navbar-brand" href="#">MOOMOO</a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">牛管理</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">メッセージ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">プロフィール</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">検索</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AI質問 powered by GPT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ページが挿入される -->
+    <main layout:fragment="content"  id="profile">
+    </main>
+  </div>
+  <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+  <script th:src="@{/js/app.js}"></script>
+</body>
+</html>

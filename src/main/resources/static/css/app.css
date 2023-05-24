@@ -1,0 +1,296 @@
+@media screen and (min-width: 768px) {
+
+    /* index.html */
+
+    body > div {
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+    }
+
+    .welcome {
+        width: 50%; 
+        height: 100vh;
+        padding: 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: antiquewhite;
+    }
+
+    .welcome > h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .welcome > p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .social_login {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social_login > h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 0 30px 50px 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    .social_login > a {
+        text-align: center;
+    }
+
+    .social_login img {
+        width: 300px;
+    }
+
+    /* profile.html */
+    #sidebar {
+        width: 230px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #topbar {
+        display: none;
+    }
+
+    #profile {
+        margin-left: 230px;
+        width: 100%;
+    }
+    
+    .profile_main {
+        margin-left: 40px;
+    }
+
+    .profile_btn_fix {
+        font-size: 12px;
+
+    }
+
+    .active {
+        background-color: tomato !important;
+        color: #fff !important;
+        border: none;
+    }
+
+    .cow_form {
+        height: 80vh;
+        border: 2px solid #0000005b;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .cow_form_right{
+        padding-left: 20px;
+        border-left: 3px solid #0000005b;
+    }
+    .cow_form_right > div {
+        font-weight: 500;
+    }
+
+    .fix_modal {
+        max-width: none;
+        width: 100%;
+    }
+
+    .modal_btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 50px;
+        border: 3px solid #0000008a;
+        border-radius: 15px;
+    }
+    .modal_btn > svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* cow_list.html */
+    .cow_profile {
+        height: 300px;
+        padding: 30px;
+        background-color: #FFFEF7;
+        border: 2px solid #0000005b;
+        border-radius: 10px;
+    }
+
+    .cow_profile_left {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cow_profile_right {
+        height: 80px;
+        margin: 0 0 20px 20px;
+        padding-left: 10px;
+        font-size: 14px;
+        border-left: 2px solid #0000005b;
+    }
+}
+
+@media screen and (max-width: 767.5px) {
+
+    /* index.html */
+    
+    body > div {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome {
+        width: 100%; 
+        height: 40vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: antiquewhite;
+    }
+
+    .welcome > h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 auto 10px auto;
+    }
+
+    .welcome > p {
+        font-size: 1.5rem;
+        letter-spacing: 1.2px;
+        font-weight: 500;
+        margin: 0 auto 10px auto;
+    }
+
+    .social_login {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social_login > h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 0 20px 50px 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+
+    .social_login > a {
+        text-align: center;
+    }
+
+    .social_login img {
+        width: 250px;
+    }
+
+    /* profile.html */
+    .cow_register_btn {
+        text-align: center;
+    }
+
+    #sidebar {
+        display: none!important;
+    }
+
+    .fix_flex {
+        flex-wrap: wrap !important;
+    }
+
+    #profile {
+        width: 100%;
+    }
+
+    #topbar {
+        width: 100%!important;
+        margin: 0!important;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #profile {
+        margin-top: 60px;
+    }
+
+    #topbar a {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .profile_btn_fix {
+        font-size: 14px;
+        border: none;
+    }
+
+    .active {
+        background-color: tomato !important;
+        color: #fff !important;
+        border: none;
+    }
+
+    .cow_form {
+        height: 90vh !important;
+        margin: 0 auto;
+    }
+
+    .modal_btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 50px;
+        border: 3px solid #0000008a;
+        border-radius: 15px;
+    }
+    .modal_btn > svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cow_profile {
+        margin: 10px auto;
+        width: calc(100vw - 80px);
+        padding: 10px;
+        background-color: #FFFEF7;
+        border: 2px solid #0000005b;
+        border-radius: 10px;
+    }
+
+    .cow_profile_left {
+        width: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cow_profile_left > img {
+        width: 100px;
+        height: 100px;
+    }
+    .cow_profile_right {
+        margin-left: 10px;
+        padding: 10px 0 0 10px;
+        font-size: 14px;
+        border-left: 2px solid #0000005b;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- BootStrap Link -->
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css}" rel="stylesheet">
+
+<link rel="stylesheet" th:href="@{/css/app.css}"/>
+<title>MOOMOO - ようこそ</title>
+</head>
+<body class="bg-light">
+  <div>
+    <div class="welcome">
+      <h1>MOOMOO</h1>
+      <p>大切な牛を記録しよう</p>
+    </div>
+    <div class="social_login">
+      <h2>ログイン</h2>
+      <a th:href="@{/oauth2/authorization/google}" class="w-100"><img th:src="@{/images/btn_google_dark_normal_ios.svg}" alt="Googleでログイン"/></a>
+    </div>
+  </div>
+  <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
